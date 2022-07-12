@@ -11,16 +11,18 @@ console.log(alunos.map( a => a.bolsista ))
 const resultado = alunos.map(a => a.bolsista).reduce(function(acumulador, atual) {
     console.log(acumulador, atual)
     return acumulador + atual
-}, )
+}
+)
 
 console.log(resultado)
+console.log(typeof resultado)
 
 const todosBolsistas = function () {
-    if(resultado == 4) { console.log('verdadeiro')
+    if(resultado === 4) { console.log('verdadeiro')
     } else { console.log('falso') }
 }
 
-console.log(todosBolsistas())
+todosBolsistas()
 
 // Desafio 2: Algum aluno é bolsista?
 
@@ -29,4 +31,4 @@ const AlgumBolsista = function () {
     } else { console.log('falso') }
 }
 
-console.log(AlgumBolsista())
+AlgumBolsista()
